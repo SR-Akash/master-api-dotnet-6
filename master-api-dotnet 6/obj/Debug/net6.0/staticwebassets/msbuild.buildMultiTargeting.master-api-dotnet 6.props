@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\master-api-dotnet 6.props" />
+</Project>
