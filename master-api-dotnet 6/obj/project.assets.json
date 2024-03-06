@@ -7650,11 +7650,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\Personal Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
+      "projectUniqueName": "D:\\Personal\\Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
       "projectName": "master-api-dotnet 6",
-      "projectPath": "D:\\Personal\\Personal Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
+      "projectPath": "D:\\Personal\\Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
       "packagesPath": "C:\\Users\\Akash\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\Personal Project\\master-api-dotnet-6\\master-api-dotnet 6\\obj\\",
+      "outputPath": "D:\\Personal\\Project\\master-api-dotnet-6\\master-api-dotnet 6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
