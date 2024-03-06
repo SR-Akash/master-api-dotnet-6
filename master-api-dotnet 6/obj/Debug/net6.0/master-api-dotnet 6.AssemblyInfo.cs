@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("master-api-dotnet 6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+789eeaf2eb472e254ee3d0b9f8f25d370dbbbc38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe8446a6e6584ecfb45f484096cf291fc1088bf9")]
 [assembly: System.Reflection.AssemblyProductAttribute("master-api-dotnet 6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("master-api-dotnet 6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
