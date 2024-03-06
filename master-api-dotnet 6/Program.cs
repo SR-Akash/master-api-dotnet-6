@@ -16,9 +16,6 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddHostedService<BackgroupServiceRepo>();
 var app = builder.Build();
 
-
-//hello
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
