@@ -1,0 +1,9 @@
+﻿scaffold-DbContext "Data Source=AKASH-300174;Initial Catalog=SME;User ID=smeapp;Password=sds#dt454sesa0wdnp@1vpo#98;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Models/Read" -ContextDir "DbContexts" -Context "ReadDbContext"  -t dbo.PurchaseDemandAnalysisRow -f
+
+
+
+
+
+
+
+dotnet ef dbcontext scaffold "Data Source=AKASH-300174;Initial Catalog=CRUD_DB;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;Integrated Security=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -o "DBContext" -c "AppDbContext" -t dbo.tblUser -f --project "D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\master-api-dotnet 6.csproj"
