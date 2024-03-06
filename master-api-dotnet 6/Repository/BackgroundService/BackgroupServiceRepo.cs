@@ -1,5 +1,5 @@
 ﻿using master_api_dotnet_6.DBContext;
-
+#pragma warning disable
 namespace master_api_dotnet_6.Repository
 {
     public class BackgroupServiceRepo : BackgroundService

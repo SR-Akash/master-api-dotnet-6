@@ -1,6 +1,6 @@
 ﻿using master_api_dotnet_6.Helper.Using_FTP;
 using Microsoft.AspNetCore.Mvc;
-
+#pragma warning disable
 namespace master_api_dotnet_6.Controllers
 {
     [Produces("application/json")]

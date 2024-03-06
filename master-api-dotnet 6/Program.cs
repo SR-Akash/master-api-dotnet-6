@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Hangfire;
 using master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration;
 
-
+#pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

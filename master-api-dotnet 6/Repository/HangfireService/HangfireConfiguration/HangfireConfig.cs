@@ -1,5 +1,5 @@
 ﻿using Hangfire;
-
+#pragma warning disable
 namespace master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration
 {
     public static class HangfireConfig
@@ -46,11 +46,11 @@ namespace master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration
         {
             #region Hangfire : Task Schedular
 
-        //    app.UseHangfireDashboard("/crm/tasks", new DashboardOptions
-        //    {
-        //        Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User="admin",Pass="admin" }
-        //}
-        //    });
+            //    app.UseHangfireDashboard("/crm/tasks", new DashboardOptions
+            //    {
+            //        Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User="admin",Pass="admin" }
+            //}
+            //    });
 
             app.UseHangfireServer();
 
