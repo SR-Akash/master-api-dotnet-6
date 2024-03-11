@@ -1,4 +1,5 @@
 ﻿using Hangfire;
+using HangfireBasicAuthenticationFilter;
 #pragma warning disable
 namespace master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration
 {
@@ -13,7 +14,7 @@ namespace master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration
             StaticServerEnvironment = serverEnvironment;
             if (serverEnvironment == 1)
             {
-                connection = Environment.GetEnvironmentVariable("ConnectionString");
+                connection = Environment.GetEnvironmentVariable("ConnectionStrings");
             }
             else if (serverEnvironment == 2)
             {
@@ -35,32 +36,29 @@ namespace master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration
 
             services.AddHangfireServer();
 
-
-            //services.AddSingleton<IAsyncTaskManager, AsyncTaskManager>();
-
-
             #endregion
 
         }
+
         public static void Configuration(this IApplicationBuilder app, IConfiguration Configuration, int serverEnvironment)
         {
             #region Hangfire : Task Schedular
 
-            //    app.UseHangfireDashboard("/crm/tasks", new DashboardOptions
-            //    {
-            //        Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User="admin",Pass="admin" }
-            //}
-            //    });
+            app.UseHangfireDashboard("/dashboard", new DashboardOptions
+            {
+                Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User="admin",Pass="admin" }
+        }
+            });
 
             app.UseHangfireServer();
 
 
-            //RecurringJob.AddOrUpdate("LeadInfoEmailSend",
-            //     () => (new AsyncTaskManager()).LeadInfoEmailSend(StaticServerEnvironment),
-            //                 "0 8 * * *");
+            RecurringJob.AddOrUpdate("UserCreate",
+                 () => (new AllHangfireSchedules()).UserCreate(StaticServerEnvironment), Cron.Minutely());
 
 
             #endregion
         }
+
     }
 }

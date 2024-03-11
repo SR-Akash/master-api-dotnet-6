@@ -3,6 +3,8 @@ using master_api_dotnet_6.Repository;
 using Microsoft.EntityFrameworkCore;
 using Hangfire;
 using master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration;
+using master_api_dotnet_6.Repository.HangfireService;
+using master_api_dotnet_6.IRepository.Hangfire;
 
 #pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
@@ -14,10 +16,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Development")));
-builder.Services.AddHostedService<BackgroupServiceRepo>();
-
+#region Hangfire Service
+builder.Services.AddHangfire((sp, config) =>
+{
+    var connectionString = sp.GetRequiredService<IConfiguration>().GetConnectionString("Development");
+    config.UseSqlServerStorage(connectionString);
+});
 
 if (builder.Environment.IsProduction())
 {
@@ -25,9 +29,17 @@ if (builder.Environment.IsProduction())
 }
 else if (builder.Environment.IsStaging())
 {
-    // builder.Services.HangFireConfiguration(builder.Configuration, 2);
-
+    builder.Services.HangFireConfiguration(builder.Configuration, 1);
 }
+builder.Services.AddHangfireServer();
+#endregion
+
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Development")));
+builder.Services.AddHostedService<BackgroupServiceRepo>();
+
+builder.Services.AddScoped<IHangFireRepo, HangFireRepo>();
+
+
 
 var app = builder.Build();
 
@@ -42,4 +54,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+if (builder.Environment.IsProduction())
+{
+    app.Configuration(builder.Configuration, 1);
+
+}
+else if (builder.Environment.IsStaging())
+{
+    app.Configuration(builder.Configuration, 1);
+}
+else
+{
+    app.Configuration(builder.Configuration, 1);
+
+}
 app.Run();

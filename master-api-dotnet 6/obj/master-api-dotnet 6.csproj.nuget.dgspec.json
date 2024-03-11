@@ -52,6 +52,18 @@
               "target": "Package",
               "version": "[1.8.11, )"
             },
+            "Hangfire.Dashboard.Authorization": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Hangfire.Dashboard.Basic.Authentication": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Hangfire.Dashboard.BasicAuthorization": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.16, )"

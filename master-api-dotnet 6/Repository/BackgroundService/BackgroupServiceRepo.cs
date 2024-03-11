@@ -45,7 +45,7 @@ namespace master_api_dotnet_6.Repository
 
         #region this is another way background service
 
-        private readonly PeriodicTimer _timer = new(TimeSpan.FromSeconds(5));
+        private readonly PeriodicTimer _timer = new(TimeSpan.FromDays(1));
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (await _timer.WaitForNextTickAsync(stoppingToken)

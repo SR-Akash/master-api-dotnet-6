@@ -232,3 +232,7 @@ D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\sv\
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\tr-TR\Hangfire.Core.resources.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\zh-TW\Hangfire.Core.resources.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\zh\Hangfire.Core.resources.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Hangfire.Dashboard.Authorization.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\HangfireBasicAuthenticationFilter.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Hangfire.Dashboard.BasicAuthorization.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Owin.dll

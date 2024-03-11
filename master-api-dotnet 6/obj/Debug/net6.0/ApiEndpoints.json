@@ -1,5 +1,45 @@
 [
   {
+    "ContainingType": "master_api_dotnet_6.Controllers.HangfireController",
+    "Method": "CreateBackgroundJob",
+    "RelativePath": "api/Hangfire/CreateBackgroundJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "master_api_dotnet_6.Controllers.HangfireController",
+    "Method": "CreateContinuationJob",
+    "RelativePath": "api/Hangfire/CreateContinuationJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "master_api_dotnet_6.Controllers.HangfireController",
+    "Method": "CreateRecurring",
+    "RelativePath": "api/Hangfire/CreateRecurring",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "master_api_dotnet_6.Controllers.HangfireController",
+    "Method": "CreateScheduledJob",
+    "RelativePath": "api/Hangfire/CreateScheduledJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "master_api_dotnet_6.Controllers.ImageController",
     "Method": "DownloadImage",
     "RelativePath": "Image/DownloadImage",
