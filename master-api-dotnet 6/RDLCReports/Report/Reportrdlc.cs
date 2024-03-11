@@ -75,9 +75,6 @@ namespace SME
 
         public byte[] GetPDF<T>(string reportPath, IList<T> items, string dataSetName, string renderFormat, int PageOrientation = 1, Dictionary<string, object> reportParameters = null)
         {
-            //"PDF", "pdf", "application/pdf"
-            // reportPath ="ReportViewerCore.Sample.AspNetCore.Reports.Report.rdlc"
-            // return File(data, "application/octet-stream", "Customer Information.xlsx");
             try
             {
                 var data = PrepareReport(reportPath, items, dataSetName, "HTML5", reportParameters);
