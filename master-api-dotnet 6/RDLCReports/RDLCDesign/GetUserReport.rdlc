@@ -161,6 +161,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <KeepTogether>true</KeepTogether>
         <DataSetName>GetUserReport</DataSetName>
         <Top>0.40278in</Top>
         <Left>0.4675in</Left>

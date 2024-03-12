@@ -10,6 +10,7 @@ using master_api_dotnet_6.Repository.Reports;
 using DinkToPdf.Contracts;
 using DinkToPdf;
 using master_api_dotnet_6;
+using master_api_dotnet_6.Helper;
 
 #pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
@@ -50,7 +51,20 @@ builder.Services.AddScoped<IReports, Reports>();
 builder.Services.AddTransient<IReportrdlc, Reportrdlc>();
 #endregion
 
+#region PDF DI
+var OsPlatform = System.Runtime.InteropServices.RuntimeInformation.OSDescription.ToLower();
+var context = new CustomAssemblyLoadContext();
 
+if (OsPlatform.Contains("windows"))
+{                 // This "libwkhtmltox.dll" for Windows server;
+    context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "libwkhtmltox.dll"));
+}
+else
+{
+    // This "libwkhtmltox.so" for Linux server;
+    context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "libwkhtmltox.so"));
+}
+#endregion
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

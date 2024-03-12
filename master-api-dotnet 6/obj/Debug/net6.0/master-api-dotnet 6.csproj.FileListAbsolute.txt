@@ -271,3 +271,4 @@ D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\zh-
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\RDLCReports\RDLCDesign\GetUserReport.rdlc

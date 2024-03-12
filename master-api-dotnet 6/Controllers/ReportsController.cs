@@ -22,27 +22,27 @@ namespace master_api_dotnet_6.Controllers
 
         [HttpGet]
         [Route("GetUserReport")]
-        public async Task<IActionResult> GetUserReport()
+        public async Task<IActionResult> GetUserReport(string reportTypeName)
         {
             var data = await _IRepository.GetUserReport();
             IList<UserReportDTO> check = data;
-            var datas = _iReportrdlc.GetHTML("master-api-dotnet 6.RDLCReports.RDLCDesign.GetUserReport.rdlc", check, "sprMonthlySalesSummaryWithSalesForce", "HTML5");
-            return File(datas, "text/html", "report.html");
+
+            if (reportTypeName.ToLower().Contains("html"))
+            {
+                var datas = _iReportrdlc.GetHTML("master_api_dotnet_6.RDLCReports.RDLCDesign.GetUserReport.rdlc", check, "GetUserReport", "HTML5");
+                return File(datas, "text/html", "GetUserReport.html");
+            }
+            else if(reportTypeName.ToLower().Contains("excel"))
+            {
+                var datas = _iReportrdlc.GetXLSX("master_api_dotnet_6.RDLCReports.RDLCDesign.GetUserReport.rdlc", check, "GetUserReport", "EXCELOPENXML");
+                return File(datas, "application/octet-stream", "GetUserReport.xlsx");
+            }
+            else
+            {
+                var datas = _iReportrdlc.GetPDF("master_api_dotnet_6.RDLCReports.RDLCDesign.GetUserReport.rdlc", check, "GetUserReport", "PDF", 1);
+                return File(datas, "application/pdf", "Ledger  Report Details.PDF");
+            }
+
         }
-        //D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\RDLCReports\RDLCDesign\GetUserReport.rdlc
-        
-        
-        //[HttpGet]
-        //[Route("GetUserReportRDLCXLSX")]
-        //public IActionResult GetUserReportRDLCXLSX()
-        //{
-        //    var dt = _IRepository.GetUserReport();
-        //    var datatable = ListToDataTableConverter.ConvertToDataTable<DataRow>(dt);
-
-        //    var data = _iReportrdlc.GetHTML("master-api-dotnet 6.RDLCReports.RDLCDesign.GetUserReport.rdlc", dt, "GetUserReport", "EXCELOPENXML");
-        //    return File(data, "application/octet-stream", "All user list.xlsx");
-
-
-        //}
     }
 }
