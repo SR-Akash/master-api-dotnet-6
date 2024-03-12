@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SME
+namespace master_api_dotnet_6
 {
     public interface IReportrdlc
     {

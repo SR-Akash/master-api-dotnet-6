@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SME.Reports
+namespace master_api_dotnet_6.Reports
 {
     public static class ListExtensions
     {

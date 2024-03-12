@@ -21,13 +21,24 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.19" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.17" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Windows.Extensions" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RDLCReports\DS\" />
-    <Folder Include="RDLCReports\RDLCDesign\" />
+    <Compile Update="RDLCReports\DS\LocalSource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalSource.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="RDLCReports\DS\LocalSource.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalSource.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Data;
 using DinkToPdf.Contracts;
 using DinkToPdf;
 
-namespace SME
+namespace master_api_dotnet_6
 {
     public class Reportrdlc : IReportrdlc
     {

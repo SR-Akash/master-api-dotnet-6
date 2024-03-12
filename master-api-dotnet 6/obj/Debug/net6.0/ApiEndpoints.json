@@ -40,6 +40,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "master_api_dotnet_6.Controllers.ReportsController",
+    "Method": "GetUserReport",
+    "RelativePath": "api/Reports/GetUserReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "master_api_dotnet_6.Controllers.ImageController",
     "Method": "DownloadImage",
     "RelativePath": "Image/DownloadImage",

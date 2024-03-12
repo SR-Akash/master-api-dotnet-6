@@ -5,6 +5,11 @@ using Hangfire;
 using master_api_dotnet_6.Repository.HangfireService.HangfireConfiguration;
 using master_api_dotnet_6.Repository.HangfireService;
 using master_api_dotnet_6.IRepository.Hangfire;
+using master_api_dotnet_6.IRepository.IReports;
+using master_api_dotnet_6.Repository.Reports;
+using DinkToPdf.Contracts;
+using DinkToPdf;
+using master_api_dotnet_6;
 
 #pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
@@ -37,8 +42,13 @@ builder.Services.AddHangfireServer();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Development")));
 builder.Services.AddHostedService<BackgroupServiceRepo>();
 
-builder.Services.AddScoped<IHangFireRepo, HangFireRepo>();
 
+#region Services Register List Start
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+builder.Services.AddScoped<IHangFireRepo, HangFireRepo>();
+builder.Services.AddScoped<IReports, Reports>();
+builder.Services.AddTransient<IReportrdlc, Reportrdlc>();
+#endregion
 
 
 var app = builder.Build();

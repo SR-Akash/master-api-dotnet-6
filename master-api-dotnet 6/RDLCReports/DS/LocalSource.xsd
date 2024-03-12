@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LocalSource" targetNamespace="http://tempuri.org/RPTInvoice.xsd" xmlns:mstns="http://tempuri.org/RPTInvoice.xsd" xmlns="http://tempuri.org/RPTInvoice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=10.209.99.244;Initial Catalog=Madina;Persist Security Info=True;User ID=isukisespts3vapp8dt;Password=wsa0str1vpo@8d5ws" IsAppSettingsProperty="false" Modifier="Assembly" Name="MadinaConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LocalSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LocalSource" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LocalSource">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetUserReport" msprop:Generator_RowEvHandlerName="GetUserReportRowChangeEventHandler" msprop:Generator_RowDeletedName="GetUserReportRowDeleted" msprop:Generator_RowDeletingName="GetUserReportRowDeleting" msprop:Generator_RowEvArgName="GetUserReportRowChangeEvent" msprop:Generator_TablePropName="GetUserReport" msprop:Generator_RowChangedName="GetUserReportRowChanged" msprop:Generator_RowChangingName="GetUserReportRowChanging" msprop:Generator_TableClassName="GetUserReportDataTable" msprop:Generator_RowClassName="GetUserReportRow" msprop:Generator_TableVarName="tableGetUserReport" msprop:Generator_UserTableName="GetUserReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="Password" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_UserColumnName="Password" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

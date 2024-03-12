@@ -92,11 +92,15 @@
             },
             "ReportViewerCore.NETCore": {
               "target": "Package",
-              "version": "[15.1.19, )"
+              "version": "[15.1.17, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "System.Windows.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
