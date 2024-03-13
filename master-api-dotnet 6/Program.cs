@@ -11,6 +11,7 @@ using DinkToPdf.Contracts;
 using DinkToPdf;
 using master_api_dotnet_6;
 using master_api_dotnet_6.Helper;
+using master_api_dotnet_6.IRepository;
 
 #pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
@@ -48,6 +49,7 @@ builder.Services.AddHostedService<BackgroupServiceRepo>();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 builder.Services.AddScoped<IHangFireRepo, HangFireRepo>();
 builder.Services.AddScoped<IReports, Reports>();
+builder.Services.AddScoped<IConsolePractice, ConsolePractice>();
 builder.Services.AddTransient<IReportrdlc, Reportrdlc>();
 #endregion
 
@@ -56,7 +58,7 @@ var OsPlatform = System.Runtime.InteropServices.RuntimeInformation.OSDescription
 var context = new CustomAssemblyLoadContext();
 
 if (OsPlatform.Contains("windows"))
-{              
+{
     context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "libwkhtmltox.dll"));
 }
 else

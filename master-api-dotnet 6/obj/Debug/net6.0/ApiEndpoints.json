@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "master_api_dotnet_6.Controllers.ConsolePracticeController",
+    "Method": "CollectionsInCSharp",
+    "RelativePath": "api/ConsolePractice/CollectionsInCSharp",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "master_api_dotnet_6.Controllers.HangfireController",
     "Method": "CreateBackgroundJob",
     "RelativePath": "api/Hangfire/CreateBackgroundJob",
