@@ -56,7 +56,7 @@ var OsPlatform = System.Runtime.InteropServices.RuntimeInformation.OSDescription
 var context = new CustomAssemblyLoadContext();
 
 if (OsPlatform.Contains("windows"))
-{                 // This "libwkhtmltox.dll" for Windows server;
+{              
     context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(), "libwkhtmltox.dll"));
 }
 else
