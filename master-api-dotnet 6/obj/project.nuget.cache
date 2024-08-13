@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UNIe5achZBUVYzV0XY8RRIiCMl4I7ZE1LUzxir+6Kn8qf9/gblOur0dAkARwwp/25gVaHDVCofJDAodu4sDrEw==",
+  "dgSpecHash": "BQHzIzilN+wM6Ic3PDETy8xKaM/YlNTfKdBOgvseRiY0pGXOykYKiO98CziNj+mTN3fPuk7nuVprydemEQenbg==",
   "success": true,
   "projectFilePath": "D:\\Personal\\Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
   "expectedPackageFiles": [
@@ -165,11 +165,7 @@
     "C:\\Users\\Akash\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Akash\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Akash\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\Akash\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\Akash\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\Akash\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+    "C:\\Users\\Akash\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
     {
