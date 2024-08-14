@@ -1,6 +1,7 @@
 ﻿using Hangfire;
 using master_api_dotnet_6.DBContext;
 using master_api_dotnet_6.IRepository.Hangfire;
+using master_api_dotnet_6.Models;
 
 namespace master_api_dotnet_6.Repository.HangfireService
 {

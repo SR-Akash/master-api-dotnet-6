@@ -1,4 +1,6 @@
+
 using master_api_dotnet_6.DBContext;
+using master_api_dotnet_6.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace master_api_dotnet_6.Controllers
@@ -39,15 +41,15 @@ namespace master_api_dotnet_6.Controllers
         {
             var user = new TblUser
             {
-                ConfirmPassword="",
-                Email="",
-                IsActive=true,
-                IsDelete=false,
-                LastActionDatetime=DateTime.UtcNow,
-                Mobile="",
-                Password="",
-                PreviousPassword="",
-                UserName="Akash"
+                ConfirmPassword = "",
+                Email = "",
+                IsActive = true,
+                IsDelete = false,
+                LastActionDatetime = DateTime.UtcNow,
+                Mobile = "",
+                Password = "",
+                PreviousPassword = "",
+                UserName = "Akash"
             };
             _context.TblUsers.Add(user);
             await _context.SaveChangesAsync();

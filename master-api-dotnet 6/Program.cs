@@ -16,8 +16,6 @@ using master_api_dotnet_6.IRepository;
 #pragma warning disable
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -51,6 +49,7 @@ builder.Services.AddScoped<IHangFireRepo, HangFireRepo>();
 builder.Services.AddScoped<IReports, Reports>();
 builder.Services.AddScoped<IConsolePractice, ConsolePractice>();
 builder.Services.AddTransient<IReportrdlc, Reportrdlc>();
+builder.Services.AddTransient<IBulkInsert, BulkInsertService>();
 #endregion
 
 #region PDF DI
@@ -92,6 +91,5 @@ else if (builder.Environment.IsStaging())
 else
 {
     app.Configuration(builder.Configuration, 1);
-
 }
 app.Run();

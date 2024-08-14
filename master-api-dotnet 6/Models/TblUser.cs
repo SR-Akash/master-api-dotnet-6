@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace master_api_dotnet_6.DBContext;
+namespace master_api_dotnet_6.Models;
 
 public partial class TblUser
 {

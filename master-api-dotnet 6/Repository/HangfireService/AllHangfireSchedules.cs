@@ -1,4 +1,5 @@
 ﻿using master_api_dotnet_6.DBContext;
+using master_api_dotnet_6.Models;
 using Microsoft.EntityFrameworkCore;
 
 
