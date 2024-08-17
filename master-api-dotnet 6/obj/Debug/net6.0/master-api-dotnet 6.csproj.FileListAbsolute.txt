@@ -136,6 +136,7 @@ D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Din
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\EPPlus.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\EPPlus.Interfaces.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\FastMember.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Hangfire.AspNetCore.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Hangfire.Core.dll
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\Hangfire.Dashboard.Authorization.dll
@@ -287,4 +288,3 @@ D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\ref
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\master-api-dotnet 6.pdb
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\master-api-dotnet 6.genruntimeconfig.cache
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\ref\master-api-dotnet 6.dll
-D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\FastMember.dll
