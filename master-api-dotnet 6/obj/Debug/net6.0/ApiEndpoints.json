@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "master_api_dotnet_6.Controllers.BulkInsertController",
+    "Method": "UploadBulkExcel",
+    "RelativePath": "api/BulkInsert/UploadBulkExcel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "master_api_dotnet_6.Controllers.ConsolePracticeController",
     "Method": "CollectionsInCSharp",
     "RelativePath": "api/ConsolePractice/CollectionsInCSharp",

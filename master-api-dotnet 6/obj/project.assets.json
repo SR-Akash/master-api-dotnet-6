@@ -111,6 +111,15 @@
           "lib/net6.0/EPPlus.System.Drawing.dll": {}
         }
       },
+      "FastMember/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/FastMember.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/FastMember.dll": {}
+        }
+      },
       "Hangfire/1.8.11": {
         "type": "package",
         "dependencies": {
@@ -3253,6 +3262,20 @@
         "lib/netstandard2.1/EPPlus.System.Drawing.dll",
         "license.md",
         "readme.md"
+      ]
+    },
+    "FastMember/1.5.0": {
+      "sha512": "Db80coUbys8VgmcrR9mxUR+EInTpweoLM0GFJXIBuj8+PTgqV+ygq+EOM3HME83tob1+RR9XlBcEkpfFyypdHg==",
+      "type": "package",
+      "path": "fastmember/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastmember.1.5.0.nupkg.sha512",
+        "fastmember.nuspec",
+        "lib/net461/FastMember.dll",
+        "lib/netcoreapp2.0/FastMember.dll",
+        "lib/netstandard2.0/FastMember.dll"
       ]
     },
     "Hangfire/1.8.11": {
@@ -9523,6 +9546,7 @@
     "net6.0": [
       "DinkToPdf >= 1.0.8",
       "EPPlus >= 7.2.2",
+      "FastMember >= 1.5.0",
       "Hangfire >= 1.8.11",
       "Hangfire.Dashboard.Authorization >= 3.0.1",
       "Hangfire.Dashboard.Basic.Authentication >= 5.0.0",
@@ -9593,6 +9617,10 @@
           "EPPlus": {
             "target": "Package",
             "version": "[7.2.2, )"
+          },
+          "FastMember": {
+            "target": "Package",
+            "version": "[1.5.0, )"
           },
           "Hangfire": {
             "target": "Package",

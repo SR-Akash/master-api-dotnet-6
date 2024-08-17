@@ -287,3 +287,4 @@ D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\ref
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\master-api-dotnet 6.pdb
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\master-api-dotnet 6.genruntimeconfig.cache
 D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\obj\Debug\net6.0\ref\master-api-dotnet 6.dll
+D:\Personal\Project\master-api-dotnet-6\master-api-dotnet 6\bin\Debug\net6.0\FastMember.dll

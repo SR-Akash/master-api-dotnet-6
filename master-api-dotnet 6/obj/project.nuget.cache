@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5K+iDTz09zllcvCt9C41ChW5DHyZ7XrCes7vNNjWLeMcOODnscza9JtWlsqx4EM/GwDyx7kTeFvetImyu5pT7A==",
+  "dgSpecHash": "2D8Xxs/b/ZFBKB/EtIsS+GG7T6D/pCDdVeHgmBrjr5G6jMTS5zWtoW0BLK2pFAq6kcK2EA/TH/f4U6DSWepWtA==",
   "success": true,
   "projectFilePath": "D:\\Personal\\Project\\master-api-dotnet-6\\master-api-dotnet 6\\master-api-dotnet 6.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Akash\\.nuget\\packages\\epplus\\7.2.2\\epplus.7.2.2.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\epplus.system.drawing\\6.1.1\\epplus.system.drawing.6.1.1.nupkg.sha512",
+    "C:\\Users\\Akash\\.nuget\\packages\\fastmember\\1.5.0\\fastmember.1.5.0.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\hangfire\\1.8.11\\hangfire.1.8.11.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\hangfire.aspnetcore\\1.8.11\\hangfire.aspnetcore.1.8.11.nupkg.sha512",
     "C:\\Users\\Akash\\.nuget\\packages\\hangfire.core\\1.8.11\\hangfire.core.1.8.11.nupkg.sha512",
